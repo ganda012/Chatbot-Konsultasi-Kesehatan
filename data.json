@@ -1,0 +1,565 @@
+{
+  "intents": [
+    {
+      "tag": "salam",
+      "patterns": [
+        "halo", "hai", "selamat pagi", "selamat siang", "selamat sore", "selamat malam",
+        "assalamualaikum", "apa kabar", "pagi", "siang", "sore", "malam", "bro", "sis",
+        "selamat datang", "halo admin", "hai bot", "test", "p", "halo rs sehat sentosa",
+        "ada yang online?", "permisi", "mau bertanya", "boleh bertanya?", "hello", "hi",
+        "good morning", "good afternoon", "good evening", "malam", "pagi pak/bu",
+        "selamat pagi rs"
+      ],
+      "responses": [
+        "👋 Selamat datang di Layanan Virtual RS Sehat Sentosa!\n\nAda yang bisa saya bantu hari ini? Silakan pilih layanan:\n1. Jadwal Dokter\n2. Daftar Online\n3. Informasi Biaya\n4. Status Hasil Lab\n5. Konsultasi Edukasi Kesehatan\n6. Informasi BPJS\n7. Hubungi CS (Live Agent)\n\nKetik nomor atau nama layanan yang Anda inginkan.",
+        "Halo! Terima kasih telah menghubungi RS Sehat Sentosa. Saya asisten virtual yang siap membantu Anda.\n\nSilakan pilih layanan:\n1. Jadwal Dokter\n2. Daftar Online\n3. Informasi Biaya\n4. Status Hasil Lab\n5. Konsultasi Edukasi Kesehatan\n6. Informasi BPJS\n7. Hubungi CS (Live Agent)",
+        "Selamat datang! Senang bisa melayani Anda di RS Sehat Sentosa.\n\nKetik nomor atau nama layanan yang Anda inginkan:\n1. Jadwal Dokter\n2. Daftar Online\n3. Informasi Biaya\n4. Status Hasil Lab\n5. Konsultasi Edukasi Kesehatan\n6. Informasi BPJS\n7. Hubungi CS (Live Agent)"
+      ]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": [
+        "terima kasih", "thanks", "makasih", "terimakasih banyak", "saya berterima kasih", 
+        "thx", "thank you", "trims", "ok terimakasih", "sama-sama", "sip makasih", 
+        "oke makasih", "mantap terima kasih", "thanks ya", "ty"
+      ],
+      "responses": [
+        "Sama-sama! Semoga informasi yang saya berikan bermanfaat untuk Anda. Apakah ada yang lain bisa saya bantu?",
+        "Senang bisa membantu Anda. Jika ada pertanyaan lain, jangan ragu untuk bertanya ya. Silakan pilih layanan lain jika diperlukan:\n1. Jadwal Dokter\n2. Daftar Online\n3. Informasi Biaya\n4. Status Hasil Lab\n5. Konsultasi Edukasi Kesehatan\n6. Informasi BPJS\n7. Hubungi CS (Live Agent)",
+        "Terima kasih kembali! Kesehatan Anda adalah prioritas kami. Jangan ragu bertanya jika butuh informasi lain."
+      ]
+    },
+    {
+      "tag": "keluar",
+      "patterns": [
+        "keluar", "selesai", "sampai jumpa", "dadah", "goodbye", "exit", "udah saja", 
+        "cukup", "terima kasih sampai jumpa", "bye", "dah", "bye bye", "saya keluar dulu", 
+        "selesai, terima kasih"
+      ],
+      "responses": [
+        "Terima kasih telah menggunakan layanan RS Sehat Sentosa. Semoga Anda sehat selalu!\n\nJika membutuhkan bantuan kembali, silakan hubungi kami di (021) 1234567 atau kunjungi website www.rssehat.com",
+        "Sampai jumpa! Jangan ragu menghubungi kami jika butuh bantuan kesehatan.\n\nRS Sehat Sentosa - Kesehatan Anda Prioritas Kami",
+        "Semoga harimu menyenangkan! Tetap jaga kesehatan ya.\n\nIngat, pencegahan lebih baik daripada pengobatan. RS Sehat Sentosa siap membantu kesehatan Anda."
+      ]
+    },
+    {
+      "tag": "bantuan",
+      "patterns": [
+        "bantuan", "help", "apa yang bisa kamu lakukan", "cara menggunakan", "panduan",
+        "menu", "menu utama", "mulai dari awal", "kembali ke menu", "pilihan", "fitur",
+        "apa saja fiturnya", "mulai lagi", "reset", "bagaimana cara kerjanya"
+      ],
+      "responses": [
+        "Saya adalah asisten virtual RS Sehat Sentosa. Saya bisa membantu Anda dengan:\n\n👋 Selamat datang di RS Sehat Sentosa\nSilakan pilih layanan:\n1. Jadwal Dokter\n2. Daftar Online\n3. Informasi Biaya\n4. Status Hasil Lab\n5. Konsultasi Edukasi Kesehatan\n6. Informasi BPJS\n7. Hubungi CS (Live Agent)\n\nKetik nomor atau nama layanan yang Anda inginkan.",
+        "Saya adalah asisten virtual RS Sehat Sentosa. Untuk memulai, silakan pilih salah satu layanan yang tersedia dengan mengetik nomor 1-7 atau nama layanannya.\n\nApakah ada yang bisa saya bantu?"
+      ]
+    },
+    {
+      "tag": "jadwal_dokter",
+      "patterns": [
+        "jadwal dokter", "1", "jadwal praktek dokter", "dokter hari ini", "dokter spesialis",
+        "daftar dokter", "siapa saja dokternya", "dokter apa saja yang praktek", "jadwal dr ahmad",
+        "kapan dr siti praktek", "poli jantung buka hari apa", "dokter anak yang jaga",
+        "jadwal dokter spesialis", "praktek dokter hari ini", "jadwal dokter rs sehat sentosa",
+        "dokter jaga hari ini", "jadwal praktek", "praktek dokter", "jadwal dokter anak",
+        "jadwal poli anak", "jadwal poli jantung", "dokter spesialis anak", "dokter spesialis jantung",
+        "dr ahmad praktek jam berapa", "jam praktek dokter", "lihat jadwal dokter"
+      ],
+      "responses": [
+        "Berikut adalah jadwal praktek dokter di RS Sehat Sentosa:\n\n**Poli Penyakit Dalam:**\n- Dr. Ahmad Wijaya, Sp.PD: Senin, Rabu, Jumat (08:00-12:00)\n\n**Poli Kebidanan & Kandungan:**\n- Dr. Siti Nurhaliza, Sp.OG: Selasa, Kamis (09:00-14:00)\n\n**Poli Jantung & Pembuluh Darah:**\n- Dr. Rina Permata, Sp.JP: Senin, Kamis (13:00-16:00)\n\n**Poli Anak:**\n- Dr. Budi Santoso, Sp.A: Selasa, Jumat (08:00-11:00)\n\n**Poli Orthopedi:**\n- Dr. Hendra Kusuma, Sp.OT: Rabu, Sabtu (10:00-13:00)\n\nPilih dokter untuk informasi lebih lanjut atau ketik 'bantuan' untuk kembali ke menu utama."
+      ]
+    },
+    {
+      "tag": "daftar_online",
+      "patterns": [
+        "daftar online", "2", "buat janji", "appointment", "booking", "pendaftaran", "mau daftar", 
+        "cara daftar", "saya mau daftar", "pendaftaran pasien baru", "pendaftaran pasien lama", 
+        "buat janji temu", "bagaimana cara mendaftar", "daftar pasien", "cara daftar pasien baru", 
+        "daftar pasien online", "pendaftaran online", "saya ingin buat janji"
+      ],
+      "responses": [
+        "Untuk pendaftaran online, saya butuh informasi berikut:\n\n1. Nama Lengkap Pasien\n2. Nomor Telepon/Hp yang dapat dihubungi\n3. Pilih Poli:\n   - Penyakit Dalam\n   - Kebidanan & Kandungan\n   - Jantung & Pembuluh Darah\n   - Anak\n   - Orthopedi\n4. Pilih Tanggal dan Waktu Kedatangan\n5. Keluhan (opsional)\n\nSilakan lengkapi data tersebut untuk melanjutkan pendaftaran Anda.",
+        "Anda bisa mendaftar online dengan mengisi form berikut:\n\n**Nama:** \n**Nomor HP:** \n**Poli:** \n**Tanggal:** \n**Waktu:** \n\nSetelah mengisi form, kami akan mengirimkan konfirmasi janji temu melalui SMS. Mohon datang 15 menit sebelum jadwal untuk melakukan pendaftaran ulang di loket."
+      ]
+    },
+    {
+      "tag": "informasi_biaya",
+      "patterns": [
+        "informasi biaya", "3", "biaya", "harga", "tarif", "konsultasi berapa", 
+        "berapa ya biayanya", "berapa harga konsultasi", "biaya periksa", "harga di rs ini", 
+        "biaya operasi", "tarif kamar inap", "estimasi biaya", "cek biaya", "harga tindakan medis", 
+        "biaya usg", "biaya ecg", "biaya rontgen", "konsultasi spesialis berapa", "harga kamar"
+      ],
+      "responses": [
+        "Berikut adalah estimasi biaya layanan di RS Sehat Sentosa:\n\n**Konsultasi Dokter:**\n- Poli Umum: Rp 80.000 - Rp 150.000\n- Poli Spesialis: Rp 150.000 - Rp 300.000\n- Sub-spesialis: Rp 300.000 - Rp 500.000\n\n**Tindakan Medis Umum:**\n- USG (Ultrasonografi): Rp 300.000 - Rp 500.000\n- ECG (Elektrokardiogram): Rp 150.000 - Rp 250.000\n- Rontgen: Rp 100.000 - Rp 200.000\n\nUntuk informasi biaya lebih detail atau estimasi biaya operasi, silakan hubungi bagian pendaftaran atau ketik nomor 7 untuk terhubung dengan CS kami.",
+        "Kami menerima berbagai metode pembayaran untuk kenyamanan Anda:\n- Tunai\n- Kartu Kredit/Debit\n- Asuransi (sesuai kerjasama)\n- BPJS Kesehatan\n\nUntuk estimasi biaya pasti, silakan sebutkan jenis tindakan atau poli yang Anda butuhkan."
+      ]
+    },
+    {
+      "tag": "status_hasil_lab",
+      "patterns": [
+        "status hasil lab", "4", "hasil laboratorium", "hasil pemeriksaan", "cek hasil lab", 
+        "hasil tes saya", "hasil tes sudah keluar belum", "hasil pemeriksaan darah", "hasil urine", 
+        "hasil swab", "cara cek hasil lab online", "cek hasil tes", "lihat hasil lab", 
+        "hasil lab saya sudah ada belum", "hasil pemeriksaan saya"
+      ],
+      "responses": [
+        "Untuk mengecek status hasil laboratorium, saya memerlukan data berikut:\n- Nomor Rekam Medis (RM) atau\n- Nomor Pemeriksaan Lab\n\nSilakan berikan salah satu informasi tersebut untuk melihat status hasil pemeriksaan Anda.",
+        "Hasil laboratorium umumnya dapat dilihat setelah 1-3 hari kerja, tergantung jenis pemeriksaan. Anda bisa mengecek statusnya melalui:\n1. Website: www.rssehat.com/hasil-lab\n2. Aplikasi RS Sehat Sentosa Mobile\n3. Mengirimkan nomor RM ke nomor WhatsApp kami: 0812-3456-7890\n\nIngin bantuan mengecek status hasil lab Anda?"
+      ]
+    },
+    {
+      "tag": "konsultasi_edukasi",
+      "patterns": [
+        "konsultasi edukasi kesehatan", "5", "edukasi kesehatan", "tips kesehatan", 
+        "informasi kesehatan", "konsultasi kesehatan", "artikel kesehatan", "tips sehat", 
+        "cara hidup sehat", "makanan sehat", "info kesehatan", "cara hidup sehat", 
+        "tips menjaga kesehatan", "makanan bergizi", "edukasi penyakit"
+      ],
+      "responses": [
+        "Konsultasi Edukasi Kesehatan RS Sehat Sentosa menyediakan informasi kesehatan yang terpercaya. Topik yang tersedia:\n1. Diabetes Melitus dan Pencegahannya\n2. Hipertensi dan Pengelolaannya\n3. Gizi Seimbang untuk Keluarga\n4. Imunisasi Anak Lengkap\n5. Kesehatan Reproduksi\n6. Kesehatan Lansia\n\nSilakan pilih topik yang Anda inginkan atau ketik pertanyaan spesifik tentang kesehatan.",
+        "Tim medis kami siap memberikan edukasi kesehatan. Beberapa topik populer minggu ini:\n- Tips menjaga imunitas di musim pancaroba\n- Panduan diet sehat untuk penderita maag\n- Pentingnya tidur cukup untuk kesehatan mental\n\nAda topik khusus yang ingin Anda pelajari?"
+      ]
+    },
+    {
+      "tag": "informasi_bpjs",
+      "patterns": [
+        "informasi bpjs", "6", "bpjs kesehatan", "bpjs", "jaminan kesehatan", "pakai bpjs bagaimana", 
+        "apakah menerima bpjs", "cara klaim bpjs", "faskes tingkat lanjutan", "rujukan bpjs", 
+        "bpjs di rs ini", "cara menggunakan bpjs", "persyaratan bpjs", "bpjs kelas 1", "bpjs kelas 3"
+      ],
+      "responses": [
+        "RS Sehat Sentosa bekerjasama dengan BPJS Kesehatan untuk layanan:\n- Rawat Jalan (sesuai kelas)\n- Rawat Inap (sesuai kelas)\n- IGD 24 jam\n\n**Persyaratan menggunakan BPJS:**\n1. Kartu BPJS Kesehatan yang masih aktif\n2. Surat Rujukan dari Faskes 1 (untuk kasus tertentu)\n3. KTP (Identitas Diri)\n\nUntuk informasi lebih lanjut tentang coverage BPJS, silakan hubungi bagian BPJS di lantai 1 atau ketik '7' untuk terhubung dengan CS kami.",
+        "Anda bisa menggunakan BPJS Kesehatan di RS Sehat Sentosa dengan prosedur:\n1. Daftar melalui aplikasi JKN Mobile atau datang langsung ke loket pendaftaran.\n2. Siapkan kartu BPJS dan KTP asli.\n3. Untuk kontrol rutin, pastikan sudah memiliki rujukan dari Faskes 1 yang masih berlaku.\n\nAda pertanyaan spesifik tentang penggunaan BPJS di rumah sakit kami?"
+      ]
+    },
+    {
+      "tag": "hubungi_cs",
+      "patterns": [
+        "hubungi cs", "7", "live agent", "customer service", "bicara dengan cs", "bantuan manusia", 
+        "mau ngomong sama admin", "mau bicara dengan orangnya", "cs", "admin", "operator", 
+        "mau bicara dengan petugas", "bicara sama cs", "ada admin online?", "hubungi operator"
+      ],
+      "responses": [
+        "Anda akan dihubungkan dengan Customer Service RS Sehat Sentosa. Mohon tunggu sebentar...\n\nAtau Anda bisa menghubungi kami langsung melalui:\n- **Telepon:** (021) 1234567\n- **WhatsApp:** 0812-3456-7890\n- **Email:** cs@rssehat.com\n\nJam operasional CS: Senin-Sabtu, pukul 08:00-20:00 WIB.",
+        "Tim Customer Service kami siap membantu Anda. Silakan pilih metode kontak yang Anda inginkan:\n1. Telepon: (021) 1234567\n2. WhatsApp: 0812-3456-7890\n3. Live Chat di website kami\n\nKetik nomor untuk memilih atau tunggu terhubung dengan CS kami."
+      ]
+    },
+    {
+      "tag": "jam_besuk",
+      "patterns": [
+        "jam besuk", "jam besuk pasien", "jam kunjungan", "kapan boleh besuk", "jadwal besuk", 
+        "jam berkunjung", "kunjungan pasien", "boleh besuk jam berapa", "waktu besuk"
+      ],
+      "responses": [
+        "Berikut adalah jadwal jam besuk di RS Sehat Sentosa:\n\n- **Pagi:** 11:00 - 13:00 WIB\n- **Sore:** 17:00 - 19:00 WIB\n\n**Mohon diperhatikan:**\n- Satu pasien hanya boleh dikunjungi maksimal 2 orang pada satu waktu.\n- Pengunjung dilarang membawa anak di bawah 12 tahun.\n- Pastikan dalam kondisi sehat saat berkunjung.\n\nTerima kasih atas pengertian Anda."
+      ]
+    },
+    {
+      "tag": "lokasi_kontak",
+      "patterns": [
+        "lokasi", "alamat", "dimana rs sehat sentosa", "kontak", "nomor telepon", "email", 
+        "cara kesana", "alamat rs", "map", "google maps"
+      ],
+      "responses": [
+        "RS Sehat Sentosa berlokasi di:\n\n**Alamat:** Jl. Sehat Sentosa No. 1, Jakarta Selatan, DKI Jakarta 12345.\n\n**Kontak:**\n- Telepon: (021) 1234567\n- Fax: (021) 1234568\n- Email: info@rssehat.com\n- Website: www.rssehat.com\n\nAnda dapat menggunakan Google Maps dengan mengetik 'RS Sehat Sentosa' untuk petunjuk arah."
+      ]
+    },
+    {
+      "tag": "emergency",
+      "patterns": [
+        "darurat", "emergency", "igd", "gawat darurat", "ambulans", "pertolongan pertama",
+        "kecelakaan", "serangan jantung", "stroke", "kesurupan", "keracunan", "tolong!", 
+        "bantuan darurat", "saya kecelakaan", "nyeri dada hebat", "tidak sadarkan diri", 
+        "seseorang pingsan", "kepala luka", "sesak napas", "tenggorokan tersumbat", 
+        "benturan keras", "pingsan", "koma", "saya kena stroke"
+      ],
+      "responses": [
+        "⚠️ **PERINGATAN DARURAT** ⚠️\n\nUntuk keadaan darurat, segera hubungi:\n- **IGD RS Sehat Sentosa:** (021) 118 atau (021) 1234567\n- **Ambulans:** 118\n\n**Alamat IGD:** Jl. Sehat Sentosa No. 1, Jakarta Selatan\n\nIGD kami buka 24 jam setiap hari. Segera ke RS terdekat jika gejala berat!",
+        "⚠️ **INI ADALAH DARURAT MEDIS** ⚠️\n\nJangan tunggu! Segera hubungi IGD terdekat atau ambulans. Setiap detik sangat berharga dalam keadaan darurat.\n\nIGD RS Sehat Sentosa dilengkapi dengan:\n- Ruang trauma\n- Resusitasi jantung paru\n- Bedah minor darurat\n- Unit stroke siaga 24 jam"
+      ]
+    },
+    {
+      "tag": "tanya_diabetes",
+      "patterns": [
+        "apa itu diabetes", "penyakit kencing manis", "gejala diabetes", "penyebab diabetes",
+        "cara mencegah diabetes", "makanan untuk penderita diabetes", "gula darah tinggi", 
+        "beda diabetes tipe 1 dan 2", "pengobatan diabetes", "diabetes melitus", "kencing manis itu apa", 
+        "tanda tanda diabetes", "obat diabetes", "diet diabetes", "pantangan diabetes", 
+        "gula darah normal", "cara menurunkan gula darah", "diabetes itu apa sih", "gejala kencing manis", 
+        "pantangan penderita kencing manis", "makanan yang dilarang untuk diabetes", "obat alami diabetes", 
+        "apakah diabetes bisa sembuh?", "bedanya diabetes tipe 1 dan 2 apa?", "gula darah tinggi itu diabetes ga?", 
+        "dm itu apa", "diabetes militus", "penyakit gula", "penyakit gula darah"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **PENTING:** Informasi ini hanya untuk tujuan edukasi dan bukan pengganti diagnosis medis profesional. Selalu konsultasikan dengan dokter untuk keputusan kesehatan Anda.",
+          "summary": "Saya akan memberikan informasi umum seputar diabetes yang telah saya rangkum dari sumber terpercaya. Mari kita pelajari bersama.",
+          "informational_content": {
+            "definition": "Diabetes Melitus, atau sering disebut kencing manis, adalah penyakit kronis yang ditandai dengan tingginya kadar gula (glukosa) dalam darah. Ini terjadi karena tubuh tidak dapat memproduksi insulin yang cukup atau tidak dapat menggunakan insulin secara efektif.",
+            "common_symptoms": [
+              "Sering merasa haus dan minum banyak (Polidipsi).",
+              "Sering buang air kecil, terutama di malam hari (Poliuri).",
+              "Merasa sangat lapar sekalipun sudah makan (Polifagi).",
+              "Penurunan berat badan yang tidak dapat dijelaskan.",
+              "Lelah dan lemas yang berkepanjangan.",
+              "Penglihatan kabur.",
+              "Luka yang sulit sembuh."
+            ],
+            "potential_causes": [
+              "**Faktor Genetik:** Riwayat diabetes dalam keluarga meningkatkan risiko.",
+              "**Faktor Gaya Hidup:** Obesitas, kurang aktivitas fisik, dan pola makan tidak sehat.",
+              "**Autoimun (Tipe 1):** Sistem kekebalan tubuh menyerang sel penghasil insulin.",
+              "**Resistensi Insulin (Tipe 2):** Sel tubuh tidak merespons insulin dengan baik."
+            ],
+            "lifestyle_management": [
+              "**Diet Seimbang:** Kurangi makanan tinggi gula dan karbohidrat sederhana. Pilih gula kompleks, serat, dan protein.",
+              "**Aktivitas Fisik Rutin:** Olahraga minimal 30 menit sehari, 5 hari seminggu.",
+              "**Pemantauan Berat Badan:** Jaga berat badan agar tetap ideal.",
+              "**Cek Gula Darah Rutin:** Pantau kadar gula darah Anda secara berkala."
+            ],
+            "when_to_see_a_doctor": "Segera periksakan diri ke dokter jika Anda mengalami gejala-gejala di atas, terutama rasa haus yang ekstrem, penurunan berat badan drastis, atau luka yang tidak kunjung sembuh."
+          },
+          "source": "Informasi ini disusun berdasarkan pedoman dari Perkumpulan Endokrinologi Indonesia (PERKENI) dan sumber medis terkini lainnya.",
+          "call_to_action": "Jika Anda merasakan gejala-gejala ini atau memiliki riwayat keluarga dengan diabetes, sangat penting untuk melakukan pemeriksaan. Saya bisa membantu Anda membuat janji dengan dokter spesialis penyakit dalam. Ketik '2' untuk mendaftar online."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_darah_tinggi",
+      "patterns": [
+        "apa itu hipertensi", "penyakit darah tinggi", "gejala hipertensi", "penyebab darah tinggi",
+        "cara menurunkan darah tinggi", "makanan penderita hipertensi", "tekanan darah tinggi", 
+        "obat darah tinggi", "hipertensi", "tensi tinggi", "tekanan darah normal", "cara mengatasi darah tinggi", 
+        "pantangan darah tinggi", "penyebab tensi tinggi", "darah tinggi bahaya ga", "cara mengatasi tensi tinggi", 
+        "gejala tensi tinggi", "obat tensi tinggi", "pantangan penderita darah tinggi", "makanan penurun darah tinggi"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **PERINGATAN KEAMANAN:** Informasi ini bukanlah diagnosis. Hipertensi seringkali tidak menunjukkan gejala ('silent killer'). Satu-satunya cara mengetahuinya adalah dengan mengukur tekanan darah secara rutin.",
+          "summary": "Hipertensi atau tekanan darah tinggi adalah kondisi serius yang bisa meningkatkan risiko penyakit jantung dan stroke. Mari kita pahami lebih dalam.",
+          "informational_content": {
+            "definition": "Hipertensi adalah kondisi ketika tekanan darah di arteri meningkat secara berkelanjutan. Tekanan darah normal adalah sekitar 120/80 mmHg. Anda dikatakan hipertensi jika tekanan darah Anda secara konsisten 140/90 mmHg atau lebih tinggi.",
+            "common_symptoms": [
+              "**Seringkali TANPA GEJALA.** Inilah mengapa pemeriksaan rutin sangat penting.",
+              "Jika gejala muncul, biasanya sudah stadium lanjut dan bisa berupa:",
+              "Sakit kepala di bagian belakang.",
+              "Mimisan.",
+              "Napas sesak.",
+              "Pusing atau vertigo.",
+              "Nyeri dada."
+            ],
+            "potential_causes": [
+              "**Faktor Primer (90% kasus):** Penyebab pastinya tidak diketahui, tetapi berkaitan dengan genetik, gaya hidup, dan lingkungan.",
+              "**Faktor Sekunder:** Disebabkan oleh kondisi medis lain, seperti penyakit ginjal, apnea tidur, atau kelainan tiroid."
+            ],
+            "lifestyle_management": [
+              "**Kurangi Garam:** Batasi asupan natrium (garam) kurang dari 1.500 mg per hari.",
+              "**Diet DASH:** Konsumsi buah, sayur, whole grain, dan protein rendah lemak.",
+              "**Batasi Alkohol dan Hindari Rokok:** Keduanya dapat meningkatkan tekanan darah.",
+              "**Olahraga Teratur:** Aktivitas fisik aerobik sangat efektif menurunkan tekanan darah.",
+              "**Kelola Stres:** Cari cara untuk bersantai, seperti meditasi atau hobi."
+            ],
+            "when_to_see_a_doctor": "Segera ke IGD jika tekanan darah Anda sangat tinggi (180/120 mmHg atau lebih) disertai dengan nyeri dada hebat, sesak napas, mati rasa, atau kesulitan berbicara, karena ini bisa menjadi tanda serangan jantung atau stroke."
+          },
+          "source": "Data ini disusun berdasarkan rekomendasi American Heart Association (AHA) dan Perhimpunan Hipertensi Indonesia (PERHI).",
+          "call_to_action": "Jangan menebak-nebak tekanan darah Anda. Lakukan pemeriksaan rutin di fasilitas kesehatan. Saya bisa membantu Anda membuat janji untuk pemeriksaan kesehatan umum atau dengan dokter spesialis jantung. Ketik '2' untuk pendaftaran."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_asam_lambung",
+      "patterns": [
+        "apa itu asam lambung", "gerd", "penyebab asam lambung naik", "cara mengatasi maag",
+        "gejala asam lambung", "obat asam lambung", "makanan pemicu asam lambung", "perut mual", 
+        "dada terasa panas", "sensasi terbakar di dada", "maag", "nyeri ulu hati", "perih di dada", 
+        "asam lambung naik saat malam", "saya maag", "perut saya perih", "dada saya panas",
+        "tenggorokan terasa asam", "cara menghilangkan maag", "obat maag yang bagus", "penyebab perut mual", 
+        "gerd itu apa sih"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **HARAP DIPERHATIKAN:** Gejala nyeri dada juga bisa menjadi tanda serangan jantung. Jika nyeri hebat, menjalar ke lengan atau rahang, dan disertai sesak napas, segera hubungi layanan darurat.",
+          "summary": "Saya akan menjelaskan tentang GERD (Gastroesophageal Reflux Disease) atau yang lebih dikenal sebagai asam lambung naik, sebuah keluhan yang sangat umum terjadi.",
+          "informational_content": {
+            "definition": "GERD adalah kondisi ketika asam dari perut naik kembali ke kerongkongan (esofagus). Ini terjadi karena katup antara perut dan kerongkongan (LES) melemah, sehingga tidak bisa menutup dengan baik.",
+            "common_symptoms": [
+              "Sensasi terbakar di dada (heartburn), terutama setelah makan atau saat berbaring.",
+              "Rasa asam atau pahit di mulut.",
+              "Sulit menelan atau terasa ada yang tersangkut di tenggorokan.",
+              "Batuk kering kronis atau sering bersih-bersih tenggorokan.",
+              "Suara serak."
+            ],
+            "potential_causes": [
+              "**Kelebihan berat badan atau obesitas.**",
+              "**Kehamilan.**",
+              "**Merokok dan konsumsi alkohol.**",
+              "**Makan dalam porsi besar atau terlalu cepat.**",
+              "**Makan malam sebelum tidur.**",
+              "**Konsumsi makanan pemicu:** makanan berlemak, pedas, cokelat, kafein, dan minuman bersoda."
+            ],
+            "lifestyle_management": [
+              "**Hindari Makanan Pemicu:** Identifikasi dan hindari makanan yang memperburuk gejala Anda.",
+              "**Makan dengan Porsi Kecil dan Sering:** Daripada makan besar tiga kali sehari.",
+              "**Jangan Berbaring Setelah Makan:** Tunggu setidaknya 2-3 jam setelah makan sebelum tidur.",
+              "**Elevasi Kepala Saat Tidur:** Gunakan bantal lebih tinggi untuk mencegah asam naik saat tidur.",
+              "**Pertahankan Berat Badan Ideal.**"
+            ],
+            "when_to_see_a_doctor": "Konsultasikan dengan dokter jika gejala terjadi lebih dari 2 kali seminggu, tidak membaik dengan obat bebas, atau disertai kesulitan menelan, penurunan berat badan, atau muntah darah."
+          },
+          "source": "Informasi ini dirangkum dari sumber-sumber medis terpercaya seperti Mayo Clinic dan Alodokter.",
+          "call_to_action": "Jika asam lambung Anda mengganggu aktivitas sehari-hari, jangan biarkan berlarut-larut. Dokter bisa memberikan pengobatan yang tepat. Saya bisa membantu Anda membuat janji dengan dokter spesialis penyakit dalam. Ketik '2' untuk mendaftar."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_kolesterol",
+      "patterns": [
+        "apa itu kolesterol", "kolesterol tinggi", "penyebab kolesterol tinggi", "cara menurunkan kolesterol", 
+        "makanan penurun kolesterol", "kolesterol jahat", "ldl", "hdl", "kolesterol total", 
+        "bahaya kolesterol tinggi", "obat kolesterol", "pantangan kolesterol", "kolesterol itu apa", 
+        "penyakit kolesterol", "cara menurunkan kolesterol jahat", "makanan yang menurunkan kolesterol", 
+        "kolesterol baik itu apa"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **INGAT:** Informasi ini bersifat edukatif. Kadar kolesterol yang tinggi tidak menunjukkan gejala spesifik dan hanya bisa diketahui melalui pemeriksaan darah. Konsultasi dengan dokter diperlukan untuk interpretasi hasil dan rencana perawatan.",
+          "summary": "Kolesterol sering dianggap negatif, padahal tubuh kita membutuhkannya. Masalah muncul saat kadarnya tidak seimbang. Mari kita bahas lebih lanjut.",
+          "informational_content": {
+            "definition": "Kolesterol adalah zat lilin berlemak yang ditemukan dalam semua sel tubuh. Dibutuhkan untuk membuat hormon, vitamin D, dan zat yang membantu mencerna makanan. Namun, kadar yang terlalu tinggi dapat meningkatkan risiko penyakit jantung.",
+            "types_of_cholesterol": [
+              "**LDL (Low-Density Lipoprotein):** Sering disebut 'kolesterol jahat'. Kadar LDL yang tinggi dapat menumpuk di dinding arteri dan membentuk plak.",
+              "**HDL (High-Density Lipoprotein):** Disebut 'kolesterol baik'. HDL membantu membersihkan kelebihan kolesterol dari arteri dan membawanya kembali ke hati.",
+              "**Trigliserida:** Jenis lemak lain dalam darah yang kadarnya juga perlu diwaspadai."
+            ],
+            "risk_factors": [
+              "Diet tinggi lemak jenuh dan lemak trans.",
+              "Kegemukan atau obesitas.",
+              "Kurang aktivitas fisik.",
+              "Merokok.",
+              "Riwayat keluarga dengan penyakit jantung.",
+              "Usia (risiko meningkat seiring bertambahnya usia)."
+            ],
+            "lifestyle_management": [
+              "**Kurangi Lemak Jenuh:** Batasi daging merah, produk susu full-fat, dan makanan olahan.",
+              "**Konsumsi Lemak Tak Jenuh:** Pilih alpukat, kacang-kacangan, minyak zaitun, dan ikan berlemak (seperti salmon).",
+              "**Makan Serat Tinggi:** Oat, apel, kacang-kacangan, dan sayuran dapat membantu menurunkan kolesterol.",
+              "**Olahraga Teratur:** Aktivitas fisik dapat meningkatkan kadar HDL (kolesterol baik)."
+            ],
+            "when_to_see_a_doctor": "Disarankan untuk melakukan pemeriksaan kolesterol rutin, terutama jika Anda berusia di atas 40 tahun, memiliki riwayat keluarga penyakit jantung, atau memiliki faktor risiko lainnya."
+          },
+          "source": "Informasi ini disusun berdasarkan pedoman dari American Heart Association (AHA) dan Perhimpunan Kardiovaskular Indonesia (PERKI).",
+          "call_to_action": "Jangan tunggu sampai terlambat. Lakukan pemeriksaan kolesterol untuk mengetahui status kesehatan jantung Anda. Saya bisa membantu Anda menjadwalkan pemeriksaan laboratorium. Ketik '2' untuk mendaftar."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_asam_urat",
+      "patterns": [
+        "apa itu asam urat", "penyakit asam urat", "gejala asam urat", "penyebab asam urat naik", 
+        "cara mengatasi asam urat", "makanan pantangan asam urat", "obat asam urat", "nyeri sendi karena asam urat", 
+        "gout", "sendi bengkak", "purin", "asam urat itu apa", "penyakit gout", "nyeri sendi", 
+        "sendi bengkak dan nyeri", "obat nyeri asam urat", "makanan yang menyebabkan asam urat", 
+        "cara menurunkan asam urat"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **PERHATIAN:** Nyeri sendi yang hebat bisa disebabkan oleh banyak hal. Diagnosis yang tepat dari dokter sangat penting untuk penanganan yang benar dan mencegah kerusakan sendi jangka panjang.",
+          "summary": "Asam urat adalah kondisi yang bisa menyebabkan nyeri luar biasa. Mari kita pahami penyebab dan cara mengelolanya.",
+          "informational_content": {
+            "definition": "Asam urat (Gout) adalah bentuk arthritis yang menyakitkan, disebabkan oleh penumpukan kristal asam urat di dalam sendi. Ini terjadi ketika tubuh memproduksi terlalu banyak asam urat atau tidak bisa mengeluarkannya secara efisien.",
+            "common_symptoms": [
+              "Nyeri sendi yang tiba-tiba, hebat, dan sering terjadi di malam hari.",
+              "Sendi yang paling sering terkena adalah jempol kaki, tetapi bisa juga di pergelangan kaki, lutut, siku, pergelangan tangan, dan jari.",
+              "Sendi terasa panas, bengkak, kemerahan, dan sangat sensitif saat disentuh.",
+              "Batas gerak sendi menjadi terbatas."
+            ],
+            "potential_causes": [
+              "**Diet Tinggi Purin:** Purin ditemukan dalam daging merah, organ dalam, dan beberapa jenis seafood (seperti sarden dan cumi-cumi).",
+              "**Minuman Beralkohol:** Terutama bir, yang kaya akan purin.",
+              "**Kondisi Medis Tertentu:** Obesitas, tekanan darah tinggi, diabetes, dan sindrom metabolik.",
+              "**Obat-obatan:** Beberapa obat dapat meningkatkan kadar asam urat."
+            ],
+            "lifestyle_management": [
+              "**Batasi Makanan Tinggi Purin:** Kurangi konsumsi daging, jeroan, dan seafood tertentu.",
+              "**Hindari Alkohol:** Terutama bir dan minuman beralkohol lainnya.",
+              "**Banyak Minum Air Putih:** Membantu ginjal membuang kelebihan asam urat dari tubuh.",
+              "**Konsumsi Produk Susu Rendah Lemak:** Dapat membantu menurunkan risiko asam urat.",
+              "**Pertahankan Berat Badan Ideal.**"
+            ],
+            "when_to_see_a_doctor": "Segera ke dokter jika Anda mengalami nyeri sendi hebat dan tiba-tiba, yang disertai demam, karena ini bisa menjadi tanda infeksi. Dokter akan mendiagnosis dan memberikan obat untuk mengurangi nyeri dan menurunkan kadar asam urat."
+          },
+          "source": "Data ini disusun berdasarkan informasi dari Arthritis Foundation dan sumber medis terpercaya lainnya.",
+          "call_to_action": "Jangan biarkan nyeri asam urat mengganggu hidup Anda. Dokter kami dapat memberikan diagnosis yang akurat dan rencana perawatan yang tepat. Ketik '2' untuk membuat janji dengan dokter spesialis penyakit dalam atau reumatologi."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_sakit_kepala",
+      "patterns": [
+        "saya pusing", "kepala saya sakit", "migrain", "kenapa ya jadi pusing?", "cara mengatasi pusing",
+        "sering pusing", "sakit kepala sebelah", "penyebab migrain", "obat sakit kepala", "pusing saat bangun tidur", 
+        "sakit kepala tegang", "vertigo", "kepala berdenyut", "cara menghilangkan pusing", "saya migrain",
+        "penyebab sakit kepala", "sakit kepala terus menerus"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **PENTING:** Sakit kepala bisa menjadi gejala dari kondisi yang ringan hingga berbahaya. Jika Anda mengalami sakit kepala yang tiba-tiba, sangat hebat, atau disertai gejala lain seperti demam, leher kaku, kebingungan, atau lumpuh, segera ke IGD.",
+          "summary": "Sakit kepala adalah keluhan yang sangat umum. Mari kita bedakan jenis-jenisnya dan cara mengatasinya.",
+          "informational_content": {
+            "common_types": [
+              "**Migrain:** Biasanya sakit kepala sebelah, berdenyut, dan disertai mual, muntah, atau sensitif terhadap cahaya dan suara.",
+              "**Sakit Kepala Tegang (Tension-Type Headache):** Merasakan seperti kepala yang ditekan atau diikat, sering disebabkan oleh stres atau kelelahan.",
+              "**Sakit Kepala Cluster:** Sangat hebat, biasanya di sekitar satu mata, dan terjadi dalam kelompok (cluster) selama beberapa minggu atau bulan.",
+              "**Sakit Kepala Sinus:** Disertai nyeri di wajah, hidung tersumbat, dan demam."
+            ],
+            "potential_triggers": [
+              "Stres dan kecemasan.",
+              "Kurang tidur atau perubahan pola tidur.",
+              "Dehidrasi.",
+              "Makanan tertentu (keju, cokelat, makanan yang mengandung MSG).",
+              "Perubahan hormon (pada wanita).",
+              "Cahaya yang terlalu terang atau suara yang keras."
+            ],
+            "general_management": [
+              "**Istirahat di Ruang Tenang:** Berbaring di ruang yang gelap dan tenang bisa membantu.",
+              "**Kompres Dingin atau Hangat:** Kompres dingin untuk migrain, kompres hangat untuk sakit kepala tegang.",
+              "**Minum Obat Pereda Nyeri:** Obat bebas seperti parasetamol atau ibuprofen bisa membantu, tetapi jangan berlebihan.",
+              "**Cukup Tidur dan Minum Air Putih.**"
+            ],
+            "when_to_see_a_doctor": "Konsultasikan dengan dokter jika:\n- Sakit kepala Anda memburuk atau tidak membaik dengan obat bebas.\n- Sakit kepala mengganggu aktivitas sehari-hari.\n- Anda mengalami sakit kepala baru setelah usia 50 tahun.\n- Sakit kepala disertai gejala neurologis lain (kebingungan, kelumpuhan, kesulitan berbicara)."
+          },
+          "source": "Informasi ini disusun berdasarkan pedoman dari American Migraine Foundation dan sumber neurologi terpercaya.",
+          "call_to_action": "Jika sakit kepala Anda terus berlanjut, jangan tunda untuk berkonsultasi. Dokter bisa membantu mengidentifikasi jenis sakit kepala Anda dan memberikan pengobatan yang tepat. Saya bisa bantu Anda buat janji dengan dokter spesialis saraf. Ketik '2' untuk mendaftar."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_kesehatan_anak",
+      "patterns": [
+        "anak saya demam", "demam pada anak", "cara menurunkan demam anak", "batuk pada anak", 
+        "anak saya pilek", "diare pada anak", "imunisasi anak", "jadwal imunisasi", "nutrisi anak", 
+        "anak susah makan", "tumbuh kembang anak", "vaksin anak", "anak saya sakit", "bayi demam", 
+        "bayi batuk pilek", "imunisasi bayi", "jadwal vaksin anak", "vaksin mr", "vaksin dpt"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **PERINGATAN PENTING:** Kesehatan anak sangat rentan. Gejala pada anak bisa memburuk dengan cepat. Selalu konsultasikan dengan dokter anak untuk diagnosis dan penanganan yang tepat. Jangan memberikan obat dewasa kepada anak.",
+          "summary": "Sebagai orang tua, kekhawatiran pada kesehatan anak adalah hal yang wajar. Mari kita bahas beberapa keluhan umum pada anak.",
+          "informational_content": {
+            "fever_in_children": {
+              "definition": "Demam adalah respons tubuh melawan infeksi. Anak dikatakan demam jika suhu rektalnya di atas 38°C.",
+              "when_to_worry": "Segera ke dokter atau IGD jika demam disertai:\n- Ruam kulit.\n- Kesulitan bernapas.\n- Kejang.\n- Anak tampak sangat lesu atau tidak responsif.\n- Anak menangis terus-menerus dan tidak bisa dihibur.\n- Demam pada bayi di bawah 3 bulan.",
+              "initial_care": "Berikan banyak cairan, gunakan pakaian tipis, dan kompres air hangat. Obat penurun panas (seperti parasetamol) harus diberikan sesuai dosis anjuran dokter."
+            },
+            "cough_and_cold": {
+              "definition": "Batuk dan pilek pada anak biasanya disebabkan oleh virus infeksi saluran pernapasan atas.",
+              "initial_care": "Bantu anak menghirup uap air hangat, berikan madu (untuk anak di atas 1 tahun), dan pastikan ia cukup minum. Hindari memberikan obat batuk/pilek bebas tanpa resep dokter pada anak di bawah 6 tahun."
+            },
+            "immunization": {
+              "importance": "Imunisasi adalah cara paling efektif untuk melindungi anak dari berbagai penyakit berbahaya seperti campak, polio, difteri, dan tetanus.",
+              "schedule": "Ikuti jadwal imunisasi dari pemerintah atau rekomendasi IDAI (Ikatan Dokter Anak Indonesia). Jangan lewatkan jadwal vaksinasi anak Anda."
+            },
+            "nutrition": {
+              "key_points": "Anak membutuhkan nutrisi seimbang untuk tumbuh kembang yang optimal. Sajikan makanan bergizi, batasi camilan tidak sehat, dan jadikan waktu makan sebagai momen yang menyenangkan."
+            }
+          },
+          "source": "Informasi ini disusun berdasarkan rekomendasi Ikatan Dokter Anak Indonesia (IDAI) dan Kementerian Kesehatan RI.",
+          "call_to_action": "Kesehatan anak Anda adalah prioritas utama. Jangan ragu untuk berkonsultasi dengan dokter anak kami jika Anda memiliki kekhawatiran. Saya bisa membantu Anda membuat janji dengan Dr. Budi Santoso, Sp.A. Ketik '2' untuk mendaftar."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_kesehatan_mental",
+      "patterns": [
+        "saya stres", "cara mengatasi stres", "saya cemas", "gangguan kecemasan", "saya depresi", 
+        "gejala depresi", "kesehatan mental", "cara menjaga kesehatan mental", "sulit tidur", "insomnia", 
+        "mood jelek", "perasaan sedang tidak enak", "burnout", "saya merasa cemas", "saya merasa sedih terus", 
+        "saya tidak punya semangat", "cara menghilangkan stres", "konsultasi psikolog"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **PESAN PENTING:** Kesehatan mental sama pentingnya dengan kesehatan fisik. Jika Anda merasa kewalahan, jangan ragu untuk mencari bantuan profesional. Anda tidak sendirian.",
+          "summary": "Terima kasih telah mempercayakan perasaan Anda. Mari kita bahas tentang kesehatan mental dan cara menjaganya.",
+          "informational_content": {
+            "understanding_stress_and_anxiety": {
+              "definition": "Stres adalah respons tubuh terhadap tekanan. Kecemasan adalah perasaan khawatir yang berlebihan atau takut. Keduanya adalah hal normal, tetapi bisa menjadi masalah jika berkepanjangan dan mengganggu kehidupan.",
+              "symptoms": "Jantung berdebar, napas cepat, sulit konsentrasi, otot tegang, gelisah, sulit tidur."
+            },
+            "understanding_depression": {
+              "definition": "Depresi lebih dari sekadar sedih. Ini adalah gangguan mood yang menyebabkan perasaan sedih yang terus-menerus dan kehilangan minat.",
+              "symptoms": "Perasaan sedang kosong, kehilangan minat pada hobi, perubahan nafsu makan, kelelahan hebat, perasaan tidak berharga, kesulitan tidur, pikiran untuk menyakiti diri sendiri."
+            },
+            "self_care_strategies": [
+              "**Berbicara:** Bagikan perasaan Anda kepada orang yang dipercaya.",
+              "**Aktivitas Fisik:** Olahraga teratur dapat membantu mengurangi gejala stres dan cemas.",
+              "**Tidur Cukup:** Prioritaskan tidur yang berkualitas.",
+              "**Mindfulness dan Relaksasi:** Coba meditasi, yoga, atau pernapasan dalam.",
+              "**Batasi Media Sosial:** Kurangi waktu di media sosial jika membuat Anda merasa tidak baik.",
+              "**Lakukan Hobi:** Luangkan waktu untuk hal-hal yang Anda nikmati."
+            ]
+          },
+          "source": "Informasi ini disusun berdasarkan sumber dari American Psychological Association (APA) dan organisasi kesehatan mental terpercaya.",
+          "call_to_action": "Jika Anda merasa kesulitan mengatasi perasaan ini sendirian, berkonsultasi dengan psikolog atau psikiater adalah langkah yang sangat kuat. RS Sehat Sentosa memiliki klinik kesehatan mental. Saya bisa membantu Anda membuat janji secara rahasia. Ketik '2' untuk pendaftaran."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_gaya_hidup_sehat",
+      "patterns": [
+        "tips hidup sehat", "makanan sehat", "olahraga yang bagus", "cara tidur nyenyak", 
+        "cara mengurangi stres", "vitamin untuk daya tahan tubuh", "menu makanan sehat seminggu", 
+        "manfaat minum air putih", "berapa jam olahraga sehari?", "cara berhenti merokok", 
+        "tips menjaga berat badan ideal", "makanan untuk meningkatkan imun", "suplemen apa yang bagus", 
+        "cara hidup sehat", "tips sehat", "agar tidak mudah sakit", "menjaga imun tubuh"
+      ],
+      "responses": [
+        {
+          "disclaimer": "⚠️ **CATATAN:** Tips ini bersifat umum. Setiap individu memiliki kebutuhan yang berbeda. Untuk rencana kesehatan yang personal (misalnya diet atau program olahraga tertentu), konsultasikan dengan dokter atau ahli gizi.",
+          "summary": "Mengadopsi gaya hidup sehat adalah investasi terbaik untuk kesehatan jangka panjang Anda. Mari kita bahas pilar-pilar utamanya.",
+          "informational_content": {
+            "balanced_nutrition": [
+              "**Piramida Makanan:** Prioritaskan karbohidrat kompleks (nasi, gandum), protein (ikan, ayam, tahu), sayuran, dan buah-buahan.",
+              "**Batasi Gula, Garam, dan Lemak Jenuh:** Kurangi makanan olahan, makanan cepat saji, dan minuman manis.",
+              "**Hidrasi:** Minum setidaknya 8 gelas air putih per hari."
+            ],
+            "regular_exercise": [
+              "**Rekomendasi Umum:** Lakukan olahraga aerobik (jalan kaki, berlari, berenang) selama 150 menit per minggu dengan intensitas sedang.",
+              "**Kekuatan:** Tambahkan latihan kekuatan (angkat beban, yoga) minimal 2 hari seminggu.",
+              "**Konsistensi Adalah Kunci:** Temukan aktivitas yang Anda sukai agar Anda tetap konsisten."
+            ],
+            "quality_sleep": [
+              "**Durasi:** Usahakan tidur 7-9 jam setiap malam.",
+              "**Konsistensi:** Tidur dan bangun pada waktu yang sama setiap hari, bahkan di akhir pekan.",
+              "**Rutinitas Tidur:** Ciptakan suasana tenang sebelum tidur (misalnya membaca buku, mandi air hangat). Hindari layar gadget 1 jam sebelum tidur."
+            ],
+            "mental_wellness": [
+              "**Kelola Stres:** Temukan cara sehat untuk mengatasi stres, seperti hobi, meditasi, atau berbicara dengan teman.",
+              "**Hubungan Sosial:** Jaga hubungan baik dengan keluarga dan teman.",
+              "**Waktu untuk Diri Sendiri:** Luangkan waktu untuk melakukan hal-hal yang membuat Anda bahagia dan rileks."
+            ]
+          },
+          "source": "Informasi ini disusun berdasarkan panduan dari World Health Organization (WHO) dan Kementerian Kesehatan RI.",
+          "call_to_action": "Ingin memulai perjalanan gaya hidup sehat dengan rencana yang terstruktur? Konsultasikan dengan dokter umum atau dokter gizi kami untuk mendapatkan saran yang dipersonalisasi. Ketik '2' untuk membuat janji."
+        }
+      ]
+    },
+    {
+      "tag": "tanya_kesehatan_umum",
+      "patterns": [
+        "badan saya tidak enak", "saya kurang sehat", "gua sakit nih", "badan nggak fit", 
+        "badan lelah", "kenapa ya badan saya gitu-gitu aja?", "saya merasa tidak sehat", 
+        "apa yang harus saya lakukan?", "ini kenapa ya?", "ini sakit apa ya?", "dok, saya sakit", 
+        "kira-kira kenapa ya?", "perlu ke dokter nggak ya?", "ini bahaya ga?", "ini gejala penyakit apa?", 
+        "apa ini berbahaya?", "saya khawatir dengan kesehatan saya", "saya takut ini penyakit berat", 
+        "gua lagi ga enak badan", "merasa kurang fit", "badan capek", "tubuh terasa lemah",
+        "badan lemas", "merasa tidak fit"
+      ],
+      "responses": [
+        "Saya mengerti Anda merasa tidak nyaman atau khawatir dengan kondisi kesehatan Anda. Perasaan tidak enak badan bisa disebabkan oleh banyak hal, mulai dari kelelahan biasa hingga tanda-tanda kondisi medis yang perlu ditangani.\n\nUntuk mengetahui penyebab pastinya dan mendapatkan penanganan yang tepat, langkah terbaik adalah berkonsultasi langsung dengan dokter. Saya bukanlah tenaga medis dan tidak bisa memberikan diagnosis.\n\nApakah Anda ingin saya bantu membuat janji temu dengan dokter?",
+        "Terima kasih telah mempercayakan pertanyaan Anda. Informasi kesehatan yang Anda sampaikan perlu ditindaklanjuti dengan konsultasi medis untuk keakuratan diagnosis dan penanganan. Kesehatan Anda adalah prioritas.\n\nMari jadwalkan konsultasi Anda dengan dokter spesialis kami agar mendapatkan jawaban dan penanganan yang tepat. Ketik '2' untuk mendaftar online.",
+        "Pertanyaan yang sangat penting. Namun, memberikan informasi medis tanpa pemeriksaan langsung bisa berisiko. Saya sangat menyarankan Anda untuk berkonsultasi dengan dokter di RS Sehat Sentosa.\n\nIngin saya bantu buatkan janji? Anda bisa memilih dokter umum terlebih dahulu untuk pemeriksaan awal."
+      ]
+    }
+  ]
+}
